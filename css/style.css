@@ -1,41 +1,7 @@
 
-/css
-/* Estilos de reseteo y base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-/* Estilos del cuerpo */
-body {
-  background-color: #c0c0c0;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-/* Estilos de tipografía */
-h1 {
-  text-align: center;
-  color: blue;
-  font-size: 4em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 10px;
-  word-spacing: 20px;
-  text-indent: 10px;
-}
 
-h2 {
-  text-align: center;
-  margin: 15px 0;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
-  margin-bottom: 15px;
-}
 
 em {
   text-decoration-line: underline;
@@ -46,41 +12,8 @@ em {
   color: red;
 }
 
-/* Estilos de navegación */
-nav {
-  overflow: hidden;
-  background-color: #333;
-}
 
-nav ul {
-  list-style-type: none;
-}
 
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #add;
-  color: black;
-}
-
-/* Estilos del contenido principal */
-main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Estilos de listas de películas */
 ul {
   margin: 10px 0 10px 20px;
 }
@@ -89,7 +22,7 @@ ul li {
   margin-bottom: 5px;
 }
 
-/* Estilos de secciones de películas */
+
 .pelicula {
   margin-bottom: 40px;
   clear: both;
@@ -102,23 +35,25 @@ ul li {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
+  width: 300px;
+  height: auto;
 }
 
-/* Clase para la descripción de la saga */
+
 .descripcion-saga {
-  color: blue;
+  color: rgb(17, 41, 218);
   font-size: 16px;
   font-family: Georgia, serif;
   margin-bottom: 20px;
 }
 
-/* Clase para el título de películas */
+
 .titulo-peliculas {
   text-decoration: underline;
   margin: 20px 0;
 }
 
-/* Clase para la imagen de Phoenix */
+
 .phoenix-img {
   text-decoration-line: underline;
   text-decoration-color: rgb(86, 133, 209);
@@ -126,7 +61,7 @@ ul li {
   text-decoration-thickness: 6px;
 }
 
-/* Estilos de galería */
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -135,7 +70,7 @@ ul li {
   margin-bottom: 20px;
 }
 
-/* Estilos del pie de página */
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +90,19 @@ footer p {
 footer > div {
   flex-basis: 30%;
   margin-bottom: 20px;
-  color: rgb(232, 221, 221);
+  color: rgb(228, 226, 236);
   line-height: 30px;
   text-align: center;
+}
+
+.texto-peliculas {
+  display:flex;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.detalles-peliculas {
+  display:flex;
+  padding-left: 50px;
+  
 }
