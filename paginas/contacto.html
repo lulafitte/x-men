@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - X-Men</title>
+    <link rel="stylesheet" href="contacto.css">
 </head>
 <body>
-    Este es el contacto de  la pagina.
+    <nav class="nav-main">
+        <ul>
+            <li><a href="../index.html">Películas</a></li>
+            <li><a href="actores.html">Actores</a></li>
+            <li><a href="productoras.html">Películas relacionadas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Contacto</h1>
+            
+            <div class="contact-info">
+                <div class="info-section">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>info@xmen-movies.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>📱 Teléfono</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>🏢 Dirección</h3>
+                        <p>1407 Graymalkin Lane<br>
+                        Salem Center, NY 10560<br>
+                        Estados Unidos</p>
+                    </div>
+                </div>
+
+     <div class="form-section">
+            <h2>Envíanos un Mensaje</h2>
+             <form class="contact-form">
+             <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                 </div>
+                        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                        
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                 <select id="asunto" name="asunto" required>
+                         <option value="">Selecciona un tema</option>
+                         <option value="general">Consulta general</option>
+                         <option value="peliculas">Sobre las películas</option>
+                         <option value="actores">Sobre los actores</option>
+                         <option value="sugerencias">Sugerencias</option>
+                    </select>
+                </div>
+                        
+            <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                        
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                 </form>
+             </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 X-Men Movies. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
