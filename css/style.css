@@ -140,10 +140,11 @@ ul li {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .descripcion-saga {
-  color: rgb(81, 204, 232);
-  font-size:1em;
-  font-family: Georgia, serif;
+  color: #e0e0e0; /* Gris claro */
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
+  font-weight: normal; /* Cambié a normal para mejor legibilidad */
 }
 
 
@@ -190,12 +191,12 @@ footer > div {
 .texto-peliculas {
   display:flex;
   padding-left: 50px;
-  text-align: center;
+  text-align: justify;
 }
 
-.texto-peliculas p{
-  color:rgb(81, 204, 232);;
-  font-size: 1.7em; 
+.texto-peliculas p {
+  color: #e0e0e0; /* Gris claro */
+  font-size: 1.2em; 
   text-align: justify;
 }
 
@@ -204,15 +205,16 @@ footer > div {
   padding-left: 100px;
 }
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6;
-  color: #e0e0e0; 
+  color: #e0e0e0; /* Gris claro */
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 h2 {
   color: #ffcc00; 
   margin: 25px 0 15px 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'roboto';
   letter-spacing: 1px;
 }

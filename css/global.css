@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-
 body {
   background: #0f272e;
   background: linear-gradient(90deg, rgba(15, 39, 46, 1) 0%, rgba(54, 108, 122, 1) 32%, rgba(13, 31, 59, 1) 68%, rgba(2, 7,23,1)100%);
@@ -13,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
-* Definiciones de fuentes */
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
@@ -53,11 +52,16 @@ h2 {
 }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'roboto';
   line-height: 1.4;
   margin-bottom: 15px;
+  color:#a0a0a032;
 }
-
+.subrayado {
+  text-decoration: underline solid #ffcc00; 
+  font-size: 1.3em;
+  
+}
 
 nav {
   overflow: hidden;
@@ -106,13 +110,13 @@ main {
    background-color: #add;
    color: black;
 }
-/* Agrega un subrayado animado */
+
 .nav-main a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background: #ffcc00; /* Amarillo X-Men */
+    background: #ffcc00; 
     bottom: 5px;
     left: 50%;
     transition: all 0.3s ease;
@@ -174,7 +178,7 @@ footer > div {
   letter-spacing: 5px;
   margin: 0;
   
-  /* Efecto metálico */
+  
   background: linear-gradient(
     to bottom,
     #f0f0f0 0%,
@@ -189,7 +193,7 @@ footer > div {
   background-clip: text;
   color: transparent;
   
-  /* Contorno y sombras */
+  
   text-shadow: 
     0 1px 0 #393939,
     0 2px 0 #2e2e2e,
@@ -245,7 +249,7 @@ footer > div {
   transition: all 0.3s ease;
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
   .marvel-studios {
     font-size: 18px;
