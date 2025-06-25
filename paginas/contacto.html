@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - X-Men</title>
     <link rel="stylesheet" href="../css\contacto.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../imagenes/fondo/icons8-x-men-32.png" type="image/png">
+
 </head>
 <body>
     <nav class="nav-main">
         <ul>
             <li><a href="../index.html">Películas</a></li>
             <li><a href="actores.html">Actores</a></li>
-            <li><a href="productoras.html">Películas relacionadas</a></li>
+            <li><a href="/Pelicula/paginas/trailer_peliculas.html">Triler Películas</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-
+    
     <main class="main-content">
         <div class="container">
-            <h1>Contacto</h1>
+            <h1 class="x-men">Contacto</h1>
             
             <div class="contact-info">
                 <div class="info-section">
@@ -39,41 +42,58 @@
                         Salem Center, NY 10560<br>
                         Estados Unidos</p>
                     </div>
+                    
+                    <!-- Mapa agregado aquí -->
+                    <div class="contact-item">
+                        <h3>📍 Ubicación</h3>
+                        <div id="mapa">
+                            <iframe 
+                                width="100%" 
+                                height="250" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0" 
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-73.776,41.333,-73.756,41.343&amp;layer=mapnik&amp;marker=41.338,-73.766" 
+                                style="border: 1px solid #ccc; border-radius: 5px;">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
 
-     <div class="form-section">
-            <h2>Envíanos un Mensaje</h2>
-             <form class="contact-form">
-             <div class="form-group">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                 </div>
-                        
-            <div class="form-group">
-                <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="form-section">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                                
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                                
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="general">Consulta general</option>
+                                <option value="peliculas">Sobre las películas</option>
+                                <option value="actores">Sobre los actores</option>
+                                <option value="sugerencias">Sugerencias</option>
+                            </select>
+                        </div>
+                                
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                                
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
                 </div>
-                        
-            <div class="form-group">
-                <label for="asunto">Asunto:</label>
-                 <select id="asunto" name="asunto" required>
-                         <option value="">Selecciona un tema</option>
-                         <option value="general">Consulta general</option>
-                         <option value="peliculas">Sobre las películas</option>
-                         <option value="actores">Sobre los actores</option>
-                         <option value="sugerencias">Sugerencias</option>
-                    </select>
-                </div>
-                        
-            <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                    </div>
-                        
-                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                 </form>
-             </div>
-        </div>
+            </div>
         </div>
     </main>
 

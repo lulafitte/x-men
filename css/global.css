@@ -7,10 +7,32 @@
 
 
 body {
-  background-color: #c0c0c0;
+  background: #0f272e;
+  background: linear-gradient(90deg, rgba(15, 39, 46, 1) 0%, rgba(54, 108, 122, 1) 32%, rgba(13, 31, 59, 1) 68%, rgba(2, 7,23,1)100%);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+}
+* Definiciones de fuentes */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 
@@ -23,7 +45,7 @@ h1 {
   word-spacing: 20px;
   text-indent: 10px;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 h2 {
   text-align: center;
@@ -31,7 +53,7 @@ h2 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -39,7 +61,7 @@ p {
 
 nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #161515;
 }
 
 nav ul {
@@ -47,7 +69,9 @@ nav ul {
 }
 
 nav li {
+  margin: 0 20px;
   float: left;
+  position: relative;
 }
 
 nav li a {
@@ -65,18 +89,46 @@ nav li a:hover {
 
 
 main {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   padding: 20px;
 }
+.nav-main a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
 
+.nav-main a:hover {
+   background-color: #add;
+   color: black;
+}
+/* Agrega un subrayado animado */
+.nav-main a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffcc00; /* Amarillo X-Men */
+    bottom: 5px;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+.nav-main a:hover::after {
+    width: 80%;
+    left: 10%;
+}
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color:#161515;
 }
 
 footer p {
@@ -92,4 +144,212 @@ footer > div {
   color: rgb(228, 226, 236);
   line-height: 30px;
   text-align: center;
+}
+.marvel-container {
+  background-color: rgba(0, 0, 0, 0.479);  
+  padding: 40px;
+  text-align: justify;
+}
+
+.marvel-studios {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.red-line {
+  height: 2px;
+  width: 120px;
+  background-color: #e62429;
+  margin: 0 auto 20px;
+}
+
+.x-men {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 0;
+  
+  /* Efecto metálico */
+  background: linear-gradient(
+    to bottom,
+    #f0f0f0 0%,
+    #c0c0c0 10%,
+    #f0f0f0 20%,
+    #a0a0a0 50%,
+    #e0e0e0 60%,
+    #707070 70%,
+    #e0e0e0 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  /* Contorno y sombras */
+  text-shadow: 
+    0 1px 0 #393939,
+    0 2px 0 #2e2e2e,
+    0 3px 0 #292929,
+    0 4px 0 #1f1f1f,
+    0 5px 10px rgba(0, 0, 0, 0.9);
+  
+  
+  transform: perspective(500px) rotateX(10deg);
+  
+ 
+  position: relative;
+}
+
+.x-men::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+
+.x-men:hover {
+  background: linear-gradient(
+    to bottom,
+    #f0f0f0 0%,
+    #c0c0c0 10%,
+    #f0f0f0 20%,
+    #a0a0a0 50%,
+    #e0e0e0 60%,
+    #707070 70%,
+    #e0e0e0 90%,
+    #0057b8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 
+    0 1px 0 #393939,
+    0 2px 0 #2e2e2e,
+    0 3px 0 #292929,
+    0 4px 0 #1f1f1f,
+    0 5px 10px rgba(0, 0, 0, 0.9),
+    0 0 20px rgba(0, 120, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .marvel-studios {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .red-line {
+    width: 80px;
+  }
+  
+  .x-men {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+}
+.radio-input {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: black;
+  padding: 4px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input .label {
+  width: 90px;
+  height: 60px;
+  background: linear-gradient(to bottom, #333333, rgb(36, 35, 35));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  transition: all 0.1s linear;
+  border-top: 1px solid #4e4d4d;
+  background-color: #333333;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 17px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.label:has(input[type="radio"]:checked) {
+  box-shadow: 0px 17px 5px 1px rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, #1d1d1d, #1d1d1d);
+  border-top: none;
+}
+
+.label:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.label:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 103%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    transparent 10%,
+    transparent,
+    transparent 90%
+  );
+  transition: all 0.1s linear;
+  z-index: -1;
+}
+
+.label:has(input[type="radio"]:checked)::before {
+  background: linear-gradient(
+    to bottom,
+    transparent 10%,
+    #cae2fd63,
+    transparent 90%
+  );
+}
+
+.label .text {
+  color: black;
+  font-size: 15px;
+  line-height: 12px;
+  padding: 0px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+  text-shadow:
+    -1px -1px 1px rgb(224, 224, 224, 0.1),
+    0px 2px 3px rgb(0, 0, 0, 0.3);
+}
+
+.label input[type="radio"]:checked + .text {
+  color: rgb(202, 226, 253);
+  text-shadow: 0px 0px 12px #cae2fd;
 }

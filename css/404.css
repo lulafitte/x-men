@@ -1,0 +1,22 @@
+.contenedor-error {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+.imagen-error {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3a539b;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.boton-volver {
+    background-color: #3a539b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}

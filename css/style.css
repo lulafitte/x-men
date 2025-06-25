@@ -1,8 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;    
+    background-size: cover; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+}
+
+.nav-main {
+  overflow: visible; 
+  background-color: #161515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative; 
+}
+
+.nav-main ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-main li {
+    margin: 0 20px;
+    float: left;
+}
+
+.nav-main a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.nav-main a:hover {
+   background-color: #add;
+   color: black;
+}
+
+
+.nav-spotify {
+    position: relative;
+}
 
 
 
+@media (max-width: 768px) {
+    .nav-main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-main ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-main li {
+        margin: 5px 0;
+    }
+    
+    .nav-spotify {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .spotify-player {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
 
-
+.intro-text {
+  font-size: 1.2em;
+  color: #ffcc00;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  background-color: rgba(10, 20, 50, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
 em {
   text-decoration-line: underline;
   text-decoration-color: red;
@@ -12,8 +102,6 @@ em {
   color: red;
 }
 
-
-
 ul {
   margin: 10px 0 10px 20px;
 }
@@ -22,13 +110,20 @@ ul li {
   margin-bottom: 5px;
 }
 
-
 .pelicula {
   margin-bottom: 40px;
   clear: both;
   overflow: auto;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #3a539b;
   padding-bottom: 20px;
+}
+.titulo-pelicula {
+  color: #ffcc00;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  border-left: 4px solid #ffcc00;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pelicula img {
@@ -37,20 +132,18 @@ ul li {
   margin-bottom: 10px;
   width: 300px;
   height: auto;
+  transition: transform 0.3s ease; 
+  box-shadow: 0.3s ease;
 }
-
-
+.pelicula img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 .descripcion-saga {
-  color: rgb(17, 41, 218);
-  font-size: 16px;
+  color: rgb(81, 204, 232);
+  font-size:1em;
   font-family: Georgia, serif;
   margin-bottom: 20px;
-}
-
-
-.titulo-peliculas {
-  text-decoration: underline;
-  margin: 20px 0;
 }
 
 
@@ -61,7 +154,6 @@ ul li {
   text-decoration-thickness: 6px;
 }
 
-
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -69,7 +161,6 @@ ul li {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 footer {
   display: flex;
@@ -93,6 +184,7 @@ footer > div {
   color: rgb(228, 226, 236);
   line-height: 30px;
   text-align: center;
+  
 }
 
 .texto-peliculas {
@@ -101,8 +193,26 @@ footer > div {
   text-align: center;
 }
 
+.texto-peliculas p{
+  color:rgb(81, 204, 232);;
+  font-size: 1.7em; 
+  text-align: justify;
+}
+
 .detalles-peliculas {
   display:flex;
-  padding-left: 50px;
-  
+  padding-left: 100px;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #e0e0e0; 
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffcc00; 
+  margin: 25px 0 15px 0;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
 }
