@@ -6,12 +6,49 @@
 }
 
 body {
-  background: #0f272e;
-  background: linear-gradient(90deg, rgba(15, 39, 46, 1) 0%, rgba(54, 108, 122, 1) 32%, rgba(13, 31, 59, 1) 68%, rgba(2, 7,23,1)100%);
-  font-family: Arial, Helvetica, sans-serif;
+  background:  #162a36;
+  background: linear-gradient(90deg, rgba(22, 42, 54, 1) 0%, rgba(54, 88, 102, 1) 32%, rgba(23, 41, 69, 1) 68%, rgba(12, 17, 33, 1) 100%);
   margin: 0;
   padding: 0;
 }
+
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburguesa .line {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #e91e63;
+}
+
 
 @font-face {
     font-family: 'Roboto';
@@ -55,13 +92,13 @@ p {
   font-family: 'roboto';
   line-height: 1.4;
   margin-bottom: 15px;
-  color:#a0a0a032;
+  color:#a7c0db;
 }
 .subrayado {
-  text-decoration: underline solid #ffcc00; 
+  text-decoration: underline solid #d9a520; 
   font-size: 1.3em;
-  
 }
+
 
 nav {
   overflow: hidden;
@@ -98,7 +135,7 @@ main {
   padding: 20px;
 }
 .nav-main a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     padding: 14px 16px;
     border-radius: 5px;
@@ -107,9 +144,10 @@ main {
 }
 
 .nav-main a:hover {
-   background-color: #add;
-   color: black;
+  background-color: #8aa6bc; 
+  color: #1a1a1a;
 }
+
 
 .nav-main a::after {
     content: '';
@@ -153,6 +191,7 @@ footer > div {
   background-color: rgba(0, 0, 0, 0.479);  
   padding: 40px;
   text-align: justify;
+  min-width: 25em;
 }
 
 .marvel-studios {
@@ -176,35 +215,26 @@ footer > div {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 5px;
-  margin: 0;
-  
-  
+  margin: 0; 
   background: linear-gradient(
     to bottom,
-    #f0f0f0 0%,
-    #c0c0c0 10%,
-    #f0f0f0 20%,
-    #a0a0a0 50%,
-    #e0e0e0 60%,
-    #707070 70%,
-    #e0e0e0 100%
-  );
+    #e0e0e0 0%,
+    #b0b0b0 10%,
+    #d0d0d0 20%,
+    #909090 50%,
+    #c0c0c0 60%,
+    #606060 70%,
+    #c0c0c0 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  
-  
   text-shadow: 
     0 1px 0 #393939,
     0 2px 0 #2e2e2e,
     0 3px 0 #292929,
     0 4px 0 #1f1f1f,
     0 5px 10px rgba(0, 0, 0, 0.9);
-  
-  
   transform: perspective(500px) rotateX(10deg);
-  
- 
   position: relative;
 }
 
@@ -356,4 +386,20 @@ footer > div {
 .label input[type="radio"]:checked + .text {
   color: rgb(202, 226, 253);
   text-shadow: 0px 0px 12px #cae2fd;
+}
+
+
+.texto-peliculas {
+  background-color: rgba(30, 45, 60, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.detalles-peliculas {
+  color: #a7c0db;
+}
+
+.titulo-peliculas {
+  color: #b8cce4;
 }
